@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "created": "2025-11-09",
+    "purpose": "High-quality SFT datasets for romance/creative writing fine-tuning",
+    "total_datasets": 8,
+    "recommended_starter": [
+      "gutenberg-dpo",
+      "limarp-augmented",
+      "openhermes-2.5-creative"
+    ]
+  },
+  "datasets": {
+    "gutenberg-dpo": {
+      "name": "Gutenberg DPO v0.1",
+      "category": "human-written",
+      "size_examples": "~17 books in chapters",
+      "size_disk": "~50-100MB",
+      "format": "DPO (prompt, chosen, rejected)",
+      "quality": 5,
+      "romance_relevance": 3,
+      "creative_relevance": 5,
+      "huggingface_id": "jondurbin/gutenberg-dpo-v0.1",
+      "local_path": "human-written/gutenberg-dpo/",
+      "download_command": "huggingface-cli download jondurbin/gutenberg-dpo-v0.1 --repo-type dataset",
+      "pros": [
+        "100% genuine human creative writing",
+        "Published classic novels",
+        "High literary quality",
+        "Includes some romance (Pride & Prejudice)"
+      ],
+      "cons": [
+        "Relatively small dataset",
+        "Classic style may differ from modern romance",
+        "DPO format requires conversion for SFT"
+      ],
+      "notes": "The 'chosen' examples are actual human-written chapters. Perfect baseline for human prose quality."
+    },
+    "limarp-augmented": {
+      "name": "LimaRP Augmented",
+      "category": "romance-focused",
+      "size_examples": "~2000",
+      "size_disk": "~20-50MB",
+      "format": "Roleplay conversations",
+      "quality": 5,
+      "romance_relevance": 5,
+      "creative_relevance": 5,
+      "huggingface_id": "grimulkan/LimaRP-augmented",
+      "local_path": "romance-focused/limarp-augmented/",
+      "download_command": "huggingface-cli download grimulkan/LimaRP-augmented --repo-type dataset",
+      "pros": [
+        "Specifically designed for romance writing",
+        "High narrative quality",
+        "Longform conversations",
+        "Perfect for your use case"
+      ],
+      "cons": [
+        "Relatively small",
+        "Roleplay format may need adaptation",
+        "Some examples may be more RP than pure prose"
+      ],
+      "notes": "This is THE dataset for romance focus. Small but extremely relevant."
+    },
+    "openhermes-2.5": {
+      "name": "OpenHermes 2.5",
+      "category": "synthetic-high-quality",
+      "size_examples": "~1000000",
+      "size_disk": "~5-10GB",
+      "format": "ShareGPT instruction-response",
+      "quality": 4,
+      "romance_relevance": 2,
+      "creative_relevance": 3,
+      "huggingface_id": "teknium/OpenHermes-2.5",
+      "local_path": "synthetic-high-quality/openhermes-2.5/",
+      "download_command": "huggingface-cli download teknium/OpenHermes-2.5 --repo-type dataset",
+      "pros": [
+        "Large and comprehensive",
+        "High-quality GPT-4 generations",
+        "Includes creative writing subset",
+        "Proven SOTA results",
+        "Ready for SFT"
+      ],
+      "cons": [
+        "Very large (needs filtering)",
+        "Mostly general instruction data",
+        "Creative subset is minority"
+      ],
+      "notes": "Filter to creative subset (~50-100K examples) using filter_openhermes.py",
+      "filter_script": "scripts/filter_openhermes.py"
+    },
+    "airoboros-2.2": {
+      "name": "Airoboros 2.2",
+      "category": "synthetic-high-quality",
+      "size_examples": "varies",
+      "size_disk": "~1-5GB",
+      "format": "Instruction-response",
+      "quality": 4,
+      "romance_relevance": 1,
+      "creative_relevance": 4,
+      "huggingface_id": "jondurbin/airoboros-2.2",
+      "local_path": "synthetic-high-quality/airoboros-2.2/",
+      "download_command": "huggingface-cli download jondurbin/airoboros-2.2 --repo-type dataset",
+      "pros": [
+        "Strong creative writing component",
+        "GPT-4 generated",
+        "Models excel at creative tasks",
+        "Natural prose generation"
+      ],
+      "cons": [
+        "Not romance-specific",
+        "Synthetic data",
+        "May need filtering"
+      ],
+      "notes": "Good alternative to OpenHermes for creative focus"
+    },
+    "opus-writingprompts": {
+      "name": "Opus WritingPrompts",
+      "category": "human-written",
+      "size_examples": "~3000",
+      "size_disk": "~100-200MB",
+      "format": "Prompt + story",
+      "quality": 4,
+      "romance_relevance": 2,
+      "creative_relevance": 5,
+      "huggingface_id": "Babsie/opus-writer-collection",
+      "local_path": "human-written/opus-writingprompts/",
+      "download_command": "# Check HuggingFace collection for specific datasets",
+      "pros": [
+        "Pure creative fiction",
+        "Curated for creative writing",
+        "Story-focused"
+      ],
+      "cons": [
+        "Includes NSFW/erotica content",
+        "May need content filtering",
+        "Multiple datasets in collection"
+      ],
+      "notes": "Contains adult content - filter as needed. Great for pure creative fiction.",
+      "content_warning": "NSFW"
+    },
+    "bagel": {
+      "name": "Bagel",
+      "category": "synthetic-high-quality",
+      "size_examples": "~1600000",
+      "size_disk": "~10-20GB",
+      "format": "SFT instruction pairs",
+      "quality": 4,
+      "romance_relevance": 2,
+      "creative_relevance": 3,
+      "huggingface_id": "jondurbin/bagel",
+      "local_path": "synthetic-high-quality/bagel/",
+      "download_command": "huggingface-cli download jondurbin/bagel --repo-type dataset",
+      "pros": [
+        "Comprehensive (includes Gutenberg + others)",
+        "Deduplicated and curated",
+        "Includes novel-writing data",
+        "Multiple creative sources"
+      ],
+      "cons": [
+        "Very large",
+        "Needs filtering to creative subset",
+        "Mostly general instruction"
+      ],
+      "notes": "Consider using creative subset only. Contains Gutenberg + many other sources."
+    },
+    "lima": {
+      "name": "LIMA",
+      "category": "small-curated",
+      "size_examples": "~1000",
+      "size_disk": "~5-10MB",
+      "format": "Instruction-response",
+      "quality": 5,
+      "romance_relevance": 0,
+      "creative_relevance": 2,
+      "huggingface_id": "GAIR/lima",
+      "local_path": "small-curated/lima/",
+      "download_command": "huggingface-cli download GAIR/lima --repo-type dataset",
+      "pros": [
+        "Extremely high quality",
+        "Proves quality > quantity",
+        "Minimal compute needed",
+        "Diverse examples"
+      ],
+      "cons": [
+        "Very small",
+        "Not romance/creative focused",
+        "General purpose"
+      ],
+      "notes": "Great for low-compute experiments. Proves 1K quality examples can rival 100K low-quality."
+    },
+    "writingprompts": {
+      "name": "WritingPrompts",
+      "category": "human-written",
+      "size_examples": "~300000",
+      "size_disk": "~2-5GB",
+      "format": "Prompt + story",
+      "quality": 3,
+      "romance_relevance": 1,
+      "creative_relevance": 5,
+      "huggingface_id": "euclaise/writingprompts",
+      "local_path": "human-written/writingprompts/",
+      "download_command": "huggingface-cli download euclaise/writingprompts --repo-type dataset",
+      "pros": [
+        "Large human-written dataset",
+        "Reddit r/WritingPrompts",
+        "Diverse creative fiction",
+        "Story-prompt pairs"
+      ],
+      "cons": [
+        "Variable quality (Reddit)",
+        "Not romance-specific",
+        "May contain low-effort stories"
+      ],
+      "notes": "Large human creative writing dataset. Quality varies - consider filtering by upvotes/length."
+    }
+  },
+  "combinations": {
+    "recommended_starter": {
+      "name": "Romance Writing Starter Pack",
+      "datasets": ["gutenberg-dpo", "limarp-augmented", "openhermes-2.5-creative"],
+      "total_size": "~52K examples (after filtering)",
+      "rationale": "Combines human prose baseline + romance focus + broad creative instruction",
+      "download_script": "scripts/download_romance_starter_pack.sh"
+    },
+    "pure_human": {
+      "name": "Pure Human Creative Writing",
+      "datasets": ["gutenberg-dpo", "writingprompts"],
+      "total_size": "~300K+ examples",
+      "rationale": "Only genuine human-written creative text, no synthetic"
+    },
+    "minimal_compute": {
+      "name": "Small High-Quality Set",
+      "datasets": ["lima", "limarp-augmented"],
+      "total_size": "~3K examples",
+      "rationale": "Minimal compute, proves quality > quantity"
+    },
+    "comprehensive": {
+      "name": "Comprehensive Creative",
+      "datasets": ["bagel-creative-subset"],
+      "total_size": "~100K+ examples",
+      "rationale": "Maximum coverage from curated mega-dataset"
+    }
+  },
+  "download_status": {
+    "gutenberg-dpo": false,
+    "limarp-augmented": false,
+    "openhermes-2.5": false,
+    "openhermes-2.5-creative": false,
+    "airoboros-2.2": false,
+    "opus-writingprompts": false,
+    "bagel": false,
+    "lima": false,
+    "writingprompts": false
+  }
+}
