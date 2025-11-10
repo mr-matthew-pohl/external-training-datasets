@@ -1,0 +1,129 @@
+{
+  "accessible": [
+    {
+      "name": "Romancing the Beat (Gwen Hayes)",
+      "category": "beat_sheets",
+      "url": "https://plottr.com/templates/romance-beat-sheet",
+      "file": "/home/coder/dev-workspace/WRITING-PROJECTS/WRITING/Training-Tools/FocusedCorpus-Romance/corpus/craft_resources/professional/beat_sheets_01_romancing_the_beat_(gwen_hayes.md",
+      "size_kb": 104.1611328125,
+      "score_est": 9.5
+    },
+    {
+      "name": "Jami Gold Beat Sheets",
+      "category": "beat_sheets",
+      "url": "https://jamigold.com/for-writers/worksheets-for-writers/",
+      "file": "/home/coder/dev-workspace/WRITING-PROJECTS/WRITING/Training-Tools/FocusedCorpus-Romance/corpus/craft_resources/professional/beat_sheets_02_jami_gold_beat_sheets.md",
+      "size_kb": 25.8017578125,
+      "score_est": 9.0
+    },
+    {
+      "name": "Write with Harte Beat Sheet",
+      "category": "beat_sheets",
+      "url": "https://writewithharte.com/romance-beat-sheet/",
+      "file": "/home/coder/dev-workspace/WRITING-PROJECTS/WRITING/Training-Tools/FocusedCorpus-Romance/corpus/craft_resources/professional/beat_sheets_03_write_with_harte_beat_sheet.md",
+      "size_kb": 13.6494140625,
+      "score_est": 8.5
+    },
+    {
+      "name": "Harlequin Dialogue Mastery",
+      "category": "dialogue",
+      "url": "https://harlequin.submittable.com/submit",
+      "file": "/home/coder/dev-workspace/WRITING-PROJECTS/WRITING/Training-Tools/FocusedCorpus-Romance/corpus/craft_resources/professional/dialogue_09_harlequin_dialogue_mastery.md",
+      "size_kb": 36.5615234375,
+      "score_est": 9.5
+    },
+    {
+      "name": "Harlequin Internal vs External Conflict",
+      "category": "conflict",
+      "url": "https://harlequin.submittable.com/submit",
+      "file": "/home/coder/dev-workspace/WRITING-PROJECTS/WRITING/Training-Tools/FocusedCorpus-Romance/corpus/craft_resources/professional/conflict_13_harlequin_internal_vs_external.md",
+      "size_kb": 36.5615234375,
+      "score_est": 9.0
+    },
+    {
+      "name": "Desmond Morris 8 Stages of Intimacy",
+      "category": "scenes",
+      "url": "https://www.google.com/search?q=Desmond+Morris+8+stages+of+intimacy",
+      "file": "/home/coder/dev-workspace/WRITING-PROJECTS/WRITING/Training-Tools/FocusedCorpus-Romance/corpus/craft_resources/professional/scenes_16_desmond_morris_8_stages_of_int.md",
+      "size_kb": 0.2587890625,
+      "score_est": 8.0
+    },
+    {
+      "name": "National Centre for Writing Romance Guide",
+      "category": "advanced",
+      "url": "https://nationalcentreforwriting.org.uk/genre/romance/",
+      "file": "/home/coder/dev-workspace/WRITING-PROJECTS/WRITING/Training-Tools/FocusedCorpus-Romance/corpus/craft_resources/professional/advanced_18_national_centre_for_writing_ro.md",
+      "size_kb": 15.052734375,
+      "score_est": 8.0
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Savannah Gilbo 3-Act Structure",
+      "url": "https://www.savannahgilbo.com/blog/romance-story-structure",
+      "error": "unknown",
+      "note": ""
+    },
+    {
+      "name": "Lyss Em Editing Structure Guide",
+      "url": "https://www.lyssemedit.com/blog/romance-story-structure",
+      "error": "HTTPSConnectionPool(host='www.lyssemedit.com', port=443): Max retries exceeded with url: /blog/romance-story-structure (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0xe0b3732d3e00>: Failed to resolve 'www.lyssemedit.com' ([Errno -2] Name or service not known)\"))",
+      "note": ""
+    },
+    {
+      "name": "Helena Fairfax 7-Step Character Arc",
+      "url": "https://helenafairfax.com/character-arcs-romance/",
+      "error": "unknown",
+      "note": ""
+    },
+    {
+      "name": "RNA Character Development",
+      "url": "https://romanticnovelists.association.org.uk/writing-resources",
+      "error": "HTTPSConnectionPool(host='romanticnovelists.association.org.uk', port=443): Max retries exceeded with url: /writing-resources (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0xe0b372c270b0>: Failed to resolve 'romanticnovelists.association.org.uk' ([Errno -3] Temporary failure in name resolution)\"))",
+      "note": ""
+    },
+    {
+      "name": "Novel Smithy Character Creation",
+      "url": "https://novelsmithy.com/romance-characters/",
+      "error": "unknown",
+      "note": ""
+    },
+    {
+      "name": "RNA Dialogue Guide",
+      "url": "https://romanticnovelists.association.org.uk/dialogue-romance",
+      "error": "HTTPSConnectionPool(host='romanticnovelists.association.org.uk', port=443): Max retries exceeded with url: /dialogue-romance (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0xe0b3727d72c0>: Failed to resolve 'romanticnovelists.association.org.uk' ([Errno -3] Temporary failure in name resolution)\"))",
+      "note": "May have member-only content"
+    },
+    {
+      "name": "12 Tips Believable Dialogue",
+      "url": "https://www.writersdigest.com/be-inspired/12-tips-realistic-dialogue",
+      "error": "unknown",
+      "note": ""
+    },
+    {
+      "name": "Novel Smithy 5 Healthy Conflicts",
+      "url": "https://novelsmithy.com/romance-conflict-types/",
+      "error": "unknown",
+      "note": ""
+    },
+    {
+      "name": "Jane Friedman Love Scenes",
+      "url": "https://www.janefriedman.com/writing-love-scenes/",
+      "error": "unknown",
+      "note": ""
+    },
+    {
+      "name": "IngramSpark Romance Scene Guide",
+      "url": "https://www.ingramspark.com/blog/writing-romance-scenes",
+      "error": "unknown",
+      "note": ""
+    },
+    {
+      "name": "Cressida McLaughlin Pro Tips",
+      "url": "https://nationalcentreforwriting.org.uk/article/writing-romance-cressida-mclaughlin/",
+      "error": "unknown",
+      "note": ""
+    }
+  ],
+  "failed": []
+}
